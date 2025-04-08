@@ -1,13 +1,13 @@
 import {
     SiCplusplus,
     SiFramer,
-    SiGithub, SiNeovim,
+    SiGithub, SiIonos, SiNeovim,
     SiNextdotjs,
     SiReact,
     SiRust,
     SiTailwindcss,
-    SiTypescript,
-    SiWebgl,
+    SiTypescript, SiVercel,
+    SiWebgl, SiWix,
     SiZig
 } from "react-icons/si";
 import {IconType} from "react-icons";
@@ -19,7 +19,6 @@ export type ProjectProps = {
   technologies: IconType[];
   techNames: string[];
   techLinks: string[];
-  github: string;
   demo: string;
   image: string;
   available: boolean;
@@ -28,28 +27,26 @@ export type ProjectProps = {
 export const projects = [
     {
         id: 0,
-        name: "Eldora UI",
+        name: "Groupe Mermoz",
         description:
-            "open-source animated components built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
-        technologies: [SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiFramer],
-        techNames: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Framer Motion"],
-        techLinks: ["https://www.typescriptlang.org/", "https://reactjs.org/", "https://nextjs.org/", "https://tailwindcss.com/", "https://www.framer.com/motion/"],
-        github: "https://github.com/karthikmudunuri/eldoraui",
-        demo: "https://www.eldoraui.site/",
-        image: "/projects/eldoraui.png",
+            "Création d'un site vitrine pour le Groupe Mermoz lors de mon stage de 2 mois chez eux. Le site est développé avec le CMS Wix.",
+        technologies: [SiWix, SiIonos],
+        techNames: ["Wix", "Ionos"],
+        techLinks: ["https://www.wix.com/", "https://ionos.com/"],
+        demo: "https://www.groupe-mermoz.fr/",
+        image: "/projects/mermoz.png",
         available: true,
     },
     {
         id: 1,
-        name: "VR MALL",
+        name: "FMenoni",
         description:
-            "Developed an virtual mall by using Three.js and Typescript..",
-        technologies: [SiWebgl,SiTypescript, SiReact],
-        techNames: ["WebGL", "Typescript", "React"],
-        techLinks: ["https://get.webgl.org/", "https://www.typescriptlang.org/", "https://reactjs.org/"],
-        github: "https://github.com/karthikmudunuri/VRMALL",
-        demo: "https://vrmalldemo.netlify.app/",
-        image: "/projects/vrmall.png",
+            "Un site web pour ma société de développement web. Le site est développé avec NextJS et TailwindCSS.",
+        technologies: [SiNextdotjs, SiTailwindcss, SiVercel, SiTypescript],
+        techNames: ["NextJS", "TailwindCSS", "Vercel", "TypeScript"],
+        techLinks: ["https://nextjs.org/", "https://tailwindcss.com/", "https://vercel.com/", "https://www.typescriptlang.org/"],
+        demo: "https://fmenoni.com",
+        image: "/projects/fmenoni.png",
         available: true,
     },
 ];

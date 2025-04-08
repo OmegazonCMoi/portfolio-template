@@ -15,7 +15,6 @@ const ProjectCard = ({
     technologies,
     techNames,
     techLinks,
-    github,
     demo,
     image,
     available,
@@ -43,7 +42,7 @@ const ProjectCard = ({
                     width={500}
                     height={500}
                     className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
-                        id % 2 === 0 ? "right-0" : "left-0"
+                        id % 2 === 0 ? "right-0 rounded-tl-2xl" : "left-0 rounded-tr-2xl"
                     }`}
                     priority={true}
                 />
@@ -54,18 +53,6 @@ const ProjectCard = ({
                 >
                     {available ? (
                         <>
-                            <Link
-                                href={github}
-                                target="_blank"
-                                aria-label="Open GitHub Repository"
-                                className="rounded-full w-[43px] bg-white p-3 md:p-5 text-[20px] md:w-[65px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
-                                data-blobity
-                                data-blobity-radius="35"
-                                data-blobity-offset-x="4"
-                                data-blobity-offset-y="4"
-                                data-blobity-magnetic="false">
-                                <SiGithub/>
-                            </Link>
                             <Link
                                 href={demo}
                                 target="_blank"
