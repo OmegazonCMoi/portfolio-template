@@ -33,25 +33,25 @@ const Contact = () => {
                     <div className=" flex w-[350px] max-w-[90%] flex-col items-end text-right text-[14px] font-semibold uppercase text-[#e4ded7] sm:w-[350px] sm:text-[14px] md:w-[310px] md:items-start md:text-left md:text-[16px] lg:w-[420px] lg:text-[16px]">
                         <AnimatedBody
                             text={
-                                "Got a question, proposal, project, or want to work together on something?"
+                                "Vous avez une question, une proposition, un projet ou vous souhaitez collaborer ?"
                             }
                             className={
                                 "-mb-1 inline-block overflow-hidden pt-1 sm:-mb-2 md:-mb-3 lg:-mb-4"
                             }
                         />
                         <Link
-                            href="mailto:karthikmudunuri999@gmail.com?subject=Lets%20work%20together!&amp;body=Hello%2C%20I%20think%20we%20need%20you%20to%20work%20on%2Fcollaborate%20this%20particular%20product...%20Reach%20out%20as%20soon%20as%20you%20can.By%20eldoraui"
+                            href="mailto:contact@fmenoni.com?subject=Collabrons%20sur%20un%20projet!"
                             target="_blank"
-                            aria-label="Send me an email"
+                            aria-label="Contactez moi par mail"
                             className="mt-1 w-[147px] flex-1 underline underline-offset-2 hover:no-underline sm:mt-2 sm:w-[147px] md:mt-3 md:w-[170px] lg:mt-4"
                         >
-                            <AnimatedBody text={"Send me an email"} className={""} />
+                            <AnimatedBody text={"Contactez moi !"} className={""} />
                         </Link>
                     </div>
 
                     <div className="flex gap-10 text-[16px] font-bold text-[#e4ded7]  sm:gap-14 sm:text-[24px] md:gap-10 md:text-[16px] lg:gap-20 lg:text-[28px]">
                         <Link
-                            href="https://github.com/karthikmudunuri"
+                            href="https://github.com/OmegazonCMoi"
                             target="_blank"
                             aria-label="View GitHub Profile"
                         >
@@ -65,7 +65,7 @@ const Contact = () => {
                             />
                         </Link>
                         <Link
-                            href="https://www.linkedin.com/in/karthikmudunuri/"
+                            href="https://www.linkedin.com/in/fab-men/"
                             target="_blank"
                             aria-label="View linkedin Profile"
                         >

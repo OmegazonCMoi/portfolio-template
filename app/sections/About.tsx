@@ -25,7 +25,7 @@ const About = () => {
 
                         <AnimatedBody
                             delay={0.1}
-                            text="Ce qui me motive, c'est la capacité de résoudre des problèmes complexes et de voir les résultats concrets de mon travail. J'aime particulièrement apprendre et expérimenter avec des frameworks comme React et Symfony pour créer des projets innovants et fonctionnels."
+                            text="Ce qui me motive, c'est la capacité de résoudre des problèmes complexes et de voir les résultats concrets de mon travail. J'aime particulièrement apprendre et expérimenter avec des frameworks comme NextJS et Symfony pour créer des projets innovants et fonctionnels."
                         />
 
                         <AnimatedBody

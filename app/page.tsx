@@ -15,6 +15,7 @@ import Work from "./sections/Work";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Tools from "./sections/Tools.tsx";
+import Experience from "./sections/Experience";
 
 export default function Home() {
 
@@ -63,8 +64,9 @@ export default function Home() {
             <main
                 className="flex flex-col items-center justify-center bg-black"
             >
-                <Hero />
+                <Hero title="Hello, je m'appelle Fabian Menoni" />
                 <About />
+                <Experience />
                 <Work />
                 <Tools />
                 <Contact />

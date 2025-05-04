@@ -4,8 +4,13 @@ import HeroBackground from "../components/background/HeroBackground";
 import React from "react";
 import AnimatedTitle from "../animations/AnimatedTitle";
 
+// Définition correcte du type des props
+interface HeroProps {
+    title: string;
+}
 
-const Hero = () => {
+const Hero: React.FC<HeroProps> = ({ title }) => {
+    const safeTitle = title || "Titre par défaut";
     return (
         <motion.section
             className="relative z-10 flex h-[100vh] w-full justify-center"
@@ -17,17 +22,16 @@ const Hero = () => {
             <div className="mt-10 flex flex-col items-center justify-center sm:mt-0">
                 <div
                     className={`relative flex flex-col items-center justify-center ${inter.className} pointer-events-none`}
-                >                 
+                >
                     <AnimatedTitle
-                        text={"Hello, je m'appelle Fabian Menoni !"}
+                        text={safeTitle}
                         className={
                             "mb-1 text-left text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
                         }
                         wordSpace={"mr-[10px]"}
                         charSpace={"mr-[0.001em]"}
-                    />                  
+                    />
                 </div>
-                
             </div>
         </motion.section>
     );
