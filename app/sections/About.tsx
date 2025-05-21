@@ -2,6 +2,7 @@ import React from "react";
 import "../animations/animate.css";
 import AnimatedBody from "../animations/AnimatedBody";
 import AnimatedTitle from "../animations/AnimatedTitle";
+import Link from "next/link";
 
 const About = () => {
     return (
@@ -33,6 +34,24 @@ const About = () => {
                             text="Je continue à développer mes compétences et à me tenir au courant des dernières tendances en informatique, toujours prêt à relever de nouveaux défis dans ce domaine en constante évolution."
                         />
                     </div>
+                </div>
+                <div className="flex justify-start self-start gap-4 mt-4">
+                    <Link
+                        href="/files/CurriculumVitae.pdf"
+                        target="_blank"
+                        aria-label="Télécharger mon CV"
+                        className="flex items-center"
+                    >
+                        <AnimatedBody text={"Curriculum Vitae"} className={"text-3xl font-bold"} />
+                    </Link>
+                    <Link
+                        href="/files/TableauCompetences.xlsx"
+                        target="_blank"
+                        aria-label="Voir mon tableau de compétences"
+                        className="flex items-center"
+                    >
+                        <AnimatedBody text={"Tableau de compétences"} className={"text-3xl font-bold"} />
+                    </Link>
                 </div>
             </div>
         </section>
