@@ -41,17 +41,17 @@ export const metadata: Metadata = {
     ],
     colorScheme: "dark",
     openGraph: {
-        title: "Portfolio template - Eldora UI",
+        title: "Portfolio Fabian Menoni",
         description:
-      "Eldora UI is a portfolio template built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
-        url: "https://www.eldoraui.site/",
-        siteName: "www.eldoraui.site",
+      "Fabian Menoni est un développeur web passionné par la création d'applications web modernes et réactives. Son portfolio présente ses projets, ses compétences et son parcours professionnel.",
+        url: "https://portfolio.fmenoni.com/",
+        siteName: "www.fmenoni.com",
         images: [
             {
                 url: "./public/metadata.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Portfolio template - Eldora UI",
+                alt: "Portfolio Fabian Menoni",
             },
         ],
         locale: "en-US",
@@ -59,11 +59,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Portfolio template - Eldora UI",
+        title: "Portfolio Fabian Menoni",
         description:
-      "Portfolio template - Eldora UI is a portfolio template built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
-        creator: "@karthikmudunuri",
-        creatorId: "0000000000",
+      "Fabian Menoni est un développeur web passionné par la création d'applications web modernes et réactives. Son portfolio présente ses projets, ses compétences et son parcours professionnel.",
         images: ["./public/metadata.jpg"],
     },
     robots: {
