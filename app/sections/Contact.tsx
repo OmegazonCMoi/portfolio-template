@@ -78,7 +78,6 @@ const Contact = () => {
                                 charSpace={"mr-[0.01em]"}
                             />
                         </Link>
-                       
                     </div>
                 </div>
             </div>

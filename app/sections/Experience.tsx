@@ -1,7 +1,10 @@
+"use client";
+
 import React from "react";
 import "../animations/animate.css";
-import AnimatedBody from "../animations/AnimatedBody";
-import AnimatedTitle from "../animations/AnimatedTitle";
+import AnimatedBody from "../animations/AnimatedBody.tsx";
+import AnimatedTitle from "../animations/AnimatedTitle.tsx";
+import Link from "next/link";
 
 const experiences = [
     {
@@ -67,7 +70,7 @@ const experiences = [
         ],
     },
     {
-        title: "Collaborateur Stagiaire en Métiers de l’Ordonnancement et des Procédures",
+        title: "Collaborateur Stagiaire en Métiers de l'Ordonnancement et des Procédures",
         company: "Signoud Menager",
         location: "La Roche sur Foron, France",
         time: "Septembre 2021 – Octobre 2021",
@@ -98,7 +101,13 @@ const experiences = [
     },
 ];
 
-const Experience = () => {
+interface ExperienceProps {
+    showAll?: boolean;
+}
+
+const Experience = ({ showAll = false }: ExperienceProps) => {
+    const displayedExperiences = showAll ? experiences : experiences.slice(0, 2);
+
     return (
         <section
             className="relative z-10 w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-36 md:pt-20 md:pb-44 lg:pt-20 lg:pb-56"
@@ -115,7 +124,7 @@ const Experience = () => {
                 />
 
                 <div className="flex w-full flex-col gap-12 text-[#e4ded7] pr-[20em]">
-                    {experiences.map((exp, index) => (
+                    {displayedExperiences.map((exp, index) => (
                         <div
                             key={index}
                             className="flex flex-col pb-8 border-b border-b-gray-800"
@@ -147,6 +156,17 @@ const Experience = () => {
                         </div>
                     ))}
                 </div>
+
+                {!showAll && (
+                    <div className="mt-8 self-start">
+                        <Link
+                            href="/experiences"
+                            className="text-2xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors"
+                        >
+                            <AnimatedBody text="Voir toutes mes expériences" />
+                        </Link>
+                    </div>
+                )}
             </div>
         </section>
     );

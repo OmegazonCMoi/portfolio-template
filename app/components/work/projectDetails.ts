@@ -54,7 +54,7 @@ export const projects = [
         technologies: [SiNextdotjs, SiTailwindcss],
         techNames: ["NextJS", "TailwindCSS"],
         techLinks: ["https://nextjs.org/", "https://tailwindcss.com/"],
-        demo: "https://forum.lycee-faure.fr",
+        demo: "https://fcb25.vercel.app/",
         image: "/projects/forum.png",
         available: true,
     },
@@ -114,7 +114,7 @@ export const projects = [
         technologies: [SiPhp, SiSymfony],
         techNames: ["PHP", "Symfony"],
         techLinks: ["https://www.php.net/", "https://symfony.com/"],
-        demo: "https://drive.google.com/file/d/1rQ2a5z3q3g0Z5v4e6n7v7f7f7f7f7f7/view?usp=sharing",
+        demo: "https://github.com/OmegazonCMoi/GSB-Frais",
         image: "/projects/gsb.png",
         available: true,
     }
