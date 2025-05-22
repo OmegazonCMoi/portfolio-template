@@ -44,6 +44,7 @@ const About = () => {
                     >
                         <AnimatedBody text={"Curriculum Vitae"} className={"text-3xl font-bold"} />
                     </Link>
+                    <div className="h-10 w-0.5 bg-white"></div>
                     <Link
                         href="/files/TableauCompetences.xlsx"
                         target="_blank"
@@ -51,6 +52,15 @@ const About = () => {
                         className="flex items-center"
                     >
                         <AnimatedBody text={"Tableau de compétences"} className={"text-3xl font-bold"} />
+                    </Link>
+                    <div className="h-10 w-0.5 bg-white"></div>
+                    <Link
+                        href="/files/VeilleTechnologique.pptx"
+                        target="_blank"
+                        aria-label="Voir ma veille technologique"
+                        className="flex items-center"
+                    >
+                        <AnimatedBody text={"Veille Technologique"} className={"text-3xl font-bold"} />
                     </Link>
                 </div>
             </div>
